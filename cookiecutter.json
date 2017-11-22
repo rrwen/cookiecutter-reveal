@@ -1,9 +1,23 @@
 {
   "author": "Richard Wen",
   "email": "rrwen.dev@gmail.com",
+  "affiliation": "Department of Civil Engineering",
+  "date": "{% now 'utc', '%A, %B %d, %Y' %}",
+  "title": "Title",
+  "description": "",
+  "sections": "Introduction,Methods,Results,Discussion,Conclusion",
   "template_name": "template_name",
   "template_description": "template_description",
    "github_user": "rrwen",
    "github_url": "{{'https://github.com/' + cookiecutter.github_user + '/' + cookiecutter.template_name}}",
-   "github_short": "{{cookiecutter.github_user + '/' + cookiecutter.template_name}}"
+   "github_short": "{{cookiecutter.github_user + '/' + cookiecutter.template_name}}",
+   "reveal_static": "docs",
+   "reveal_theme": "white",
+   "reveal_template": "slides/template.html",
+   "reveal_controls": "true",
+   "reveal_slideNumber": "true",
+   "reveal_transition": "slide",
+   "_copy_without_render": [
+    "slides/template.html"
+  ]
 }

@@ -1,0 +1,25 @@
+{
+  "name": "{{cookiecutter.template_name}}",
+  "version": "0.0.0",
+  "description": "{{cookiecutter.template_description}}",
+  "main": "make.sh",
+  "scripts": {
+    "make": "node ./node_modules/reveal-md/bin/cli.js slides/slides.md --static {{cookiecutter.reveal_static}} --theme {{cookiecutter.reveal_theme}} --reveal-template {{cookiecutter.reveal_template}}"
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+{{cookiecutter.github_url}}.git"
+  },
+  "author": "{{cookiecutter.author}}",
+  "license": "MIT",
+  "bugs": {
+    "url": "{{cookiecutter.github_url}}/issues"
+  },
+  "homepage": "{{cookiecutter.github_url}}#readme",
+  "dependencies": {
+    "reveal-md": "^0.5.0"
+  }
+}

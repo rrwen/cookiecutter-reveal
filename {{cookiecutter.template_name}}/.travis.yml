@@ -1,0 +1,14 @@
+language: node_js
+node_js:
+  - "node"
+  - "lts/*"
+  - "8"
+  - "7"
+  - "6"
+install:
+  - npm install
+script:
+  - git clone {{cookiecutter.github_url}}
+  - cd {{cookiecutter.template_name}}
+  - npm install
+  - npm run make

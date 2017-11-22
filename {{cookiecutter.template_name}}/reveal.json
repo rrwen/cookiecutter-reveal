@@ -1,0 +1,5 @@
+{
+	"controls": {{cookiecutter.reveal_controls}},
+	"slideNumber": {{cookiecutter.reveal_slideNumber}},
+	"transition": "{{cookiecutter.reveal_transition}}"
+}
