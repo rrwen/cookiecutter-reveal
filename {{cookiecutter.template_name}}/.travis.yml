@@ -12,3 +12,4 @@ script:
   - cd {{cookiecutter.template_name}}
   - npm install
   - npm run make
+  - npm run pdf

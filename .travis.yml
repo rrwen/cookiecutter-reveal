@@ -10,3 +10,4 @@ script:
   - cd template_name
   - npm install
   - npm run make
+  - npm run pdf
