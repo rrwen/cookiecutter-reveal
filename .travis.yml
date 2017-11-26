@@ -4,17 +4,7 @@ language: node_js
 node_js:
   - "node"
   - "8"
-python:
-  - "2.7"
-  - "3.6"
 cache: pip
-addons:
-  apt:
-    sources:
-      - ubuntu-toolchain-r-test
-    packages:
-      - g++-4.8
-      - openjdk-7-jdk
 install:
   - sudo pip install cookiecutter
 script:
