@@ -1,14 +1,20 @@
 dist: trusty
 sudo: required
-language: python
+language: node_js
+node_js:
+  - "node"
+  - "8"
 python:
   - "2.7"
   - "3.6"
 cache: pip
-before_install:
-  - sudo apt-get update
-  - curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -sudo apt-get install -y nodejs
-  - sudo apt-get install -y build-essential
+addons:
+  apt:
+    sources:
+      - ubuntu-toolchain-r-test
+    packages:
+      - g++-4.8
+      - openjdk-7-jdk
 install:
   - pip install cookiecutter
 script:
