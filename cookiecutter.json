@@ -2,7 +2,7 @@
   "author": "Richard Wen",
   "email": "rrwen.dev@gmail.com",
   "affiliation": "Department of Civil Engineering",
-  "date": "{% now 'utc', '%A, %B %d, %Y' %}",
+  "date": "{% now 'utc', '%B %d, %Y' %}",
   "title": "Title",
   "description": "",
   "sections": "Introduction,Methods,Results,Discussion,Conclusion,References",
