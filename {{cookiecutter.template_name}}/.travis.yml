@@ -11,5 +11,5 @@ script:
   - git clone {{cookiecutter.github_url}}
   - cd {{cookiecutter.template_name}}
   - npm install
-  - npm run make
+  - npm run html
   - npm run pdf
