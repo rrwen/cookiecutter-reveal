@@ -1,17 +1,11 @@
-matrix:
-  include:
-    - language: python
-      python:
-        - "2.7"
-        - "3.6"
-      cache: pip
-      install:
-        - pip install cookiecutter
-    - language: node_js
-      node_js:
-        - "node"
-        - "8"
-        - "7"
+language: python
+python:
+  - "2.7"
+  - "3.6"
+node_js: "node"
+cache: pip
+install:
+  - pip install cookiecutter
 script:
   - cookiecutter --no-input gh:rrwen/cookiecutter-reveal
   - cd template_name
