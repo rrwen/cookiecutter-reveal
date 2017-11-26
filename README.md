@@ -19,10 +19,18 @@ pip install cookiecutter
 
 ## Usage
 
-Create a template using [cookiecutter](https://pypi.python.org/pypi/cookiecutter):
+1. Create a template using [cookiecutter](https://pypi.python.org/pypi/cookiecutter)
+2. Change the directory to the folder with the same name as the `template_name` input
+3. Install dependencies with [npm](https://www.npmjs.com/)
+4. Render HTML slides in the `docs` folder
+5. Render PDF slides in the `slides` folder
 
 ```
 cookiecutter gh:rrwen/cookiecutter-reveal
+cd <template_name>
+npm install
+npm run html
+npm run pdf
 ```
 
 See [Implementation](#implementation) for more details.
