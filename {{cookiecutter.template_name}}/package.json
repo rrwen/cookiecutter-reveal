@@ -4,8 +4,8 @@
   "description": "{{cookiecutter.template_description}}",
   "main": "",
   "scripts": {
-    "make": "node ./node_modules/reveal-md/bin/cli.js slides/{{cookiecutter.file_name}}.md --static {{cookiecutter.reveal_static}} --theme {{cookiecutter.reveal_theme}} --reveal-template {{cookiecutter.reveal_template}}",
-	"pdf": "node ./node_modules/decktape/decktape.js reveal {{cookiecutter.reveal_static}}/index.html slides/{{cookiecutter.file_name}}.pdf"
+    "html": "node ./node_modules/reveal-md/bin/cli.js slides/{{cookiecutter.file_name}}.md --static {{cookiecutter.reveal_static}} --theme {{cookiecutter.reveal_theme}} --reveal-template {{cookiecutter.reveal_template}}",
+    "pdf": "node ./node_modules/decktape/decktape.js reveal {{cookiecutter.reveal_static}}/index.html slides/{{cookiecutter.file_name}}.pdf"
   },
   "directories": {
     "test": "tests"
