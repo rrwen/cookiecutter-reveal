@@ -16,7 +16,7 @@ addons:
       - g++-4.8
       - openjdk-7-jdk
 install:
-  - pip install cookiecutter
+  - sudo pip install cookiecutter
 script:
   - cookiecutter --no-input gh:rrwen/cookiecutter-reveal
   - cd template_name
