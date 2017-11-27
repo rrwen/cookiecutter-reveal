@@ -12,7 +12,7 @@
 
 # Outline
 
-{% for section in cookiecutter.sections.split(',') %}
+{% for section in cookiecutter.sections.split(',') -%}
 {{loop.index}}{{'. ' + section}}
-{% endfor %}
+{%- endfor %}
 {{'\n---\n\n## ' + cookiecutter.sections.replace(',','\n\n---\n\n## ')}}
