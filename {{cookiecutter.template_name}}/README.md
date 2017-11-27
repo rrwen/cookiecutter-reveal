@@ -30,7 +30,7 @@ npm run pdf
 The following can be edited before rendering:
 
 * `slides/{{cookiecutter.file_name}}`: [Markdown](https://daringfireball.net/projects/markdown/) file with slide contents
-* `slides/template.html`: [Custom template](https://github.com/webpro/reveal-md#custom-template) for [reveal-md](https://www.npmjs.com/package/reveal-md)
-* `{{cookiecutter.reveal_static}}/edit/style.css`: file to adjust styling of slides
+* `slides/template.html`: [Custom reveal-md template](https://github.com/webpro/reveal-md#custom-template) 
+* `{{cookiecutter.reveal_static}}/edit/style.css`: [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) file to adjust styling of slides
 * `{{cookiecutter.reveal_static}}/edit/logo.png`: logo image to use
 * `reveal.json`: [Reveal.js options](https://github.com/webpro/reveal-md#revealjs-options)
