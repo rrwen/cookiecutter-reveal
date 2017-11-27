@@ -1,5 +1,6 @@
 
-/** Style **/
+/** Reveal **/
+
 .reveal h1 {
   font-size: 42pt;
   padding: 0.5%;
@@ -16,6 +17,24 @@
 .reveal p {
   font-size: 32pt;
   padding: 0!important;
+}
+
+.reveal .slide-number {
+  right: 8px;
+  top: 8px;
+  bottom: auto;
+  font-size: 24pt;
+}
+
+.reveal .controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+/* Remove top and bottom control arrows */
+.reveal .controls .navigate-down, .reveal .controls .navigate-up {
+  display: none;
 }
 
 /** Logo **/
@@ -45,19 +64,4 @@
   color: black;
   font-size: 18pt;
   outline: 0;
-}
-
-/** Reveal **/
-
-.reveal .slide-number {
-  right: 8px;
-  top: 8px;
-  bottom: auto;
-  font-size: 24pt;
-}
-
-.controls {
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
 }
