@@ -12,5 +12,7 @@
 
 # Outline
 
-{{'\n' + '\n'.join([str(i+1) + '. ' + section for i,section in enumerate(cookiecutter.sections.split(','))])}}
+{% for section in cookiecutter.sections.split(',') %}
+str(loop.index) + '. ' + section + '\n'
+{% endfor %}
 {{'\n---\n\n## ' + cookiecutter.sections.replace(',','\n---\n\n## ')}}
