@@ -16,7 +16,7 @@
 
 1. Install [npm](https://www.npmjs.com/)
 2. [Clone](https://git-scm.com/docs/git-clone) this repository
-3. Generate **docs/index.html** (see `script.html`) in [package.json](https://github.com/{{cookiecutter.github_short}}/blob/master/package.json)
+3. Generate **{{cookiecutter.reveal_static}}/index.html** (see `script.html`) in [package.json](https://github.com/{{cookiecutter.github_short}}/blob/master/package.json)
 4. Generate **slides/{{cookiecutter.file_name}}.pdf** (see `script.pdf`) in [package.json](https://github.com/{{cookiecutter.github_short}}/blob/master/package.json)
 
 ```
@@ -32,5 +32,5 @@ The following can be edited before rendering:
 * `slides/{{cookiecutter.file_name}}`: [Markdown](https://daringfireball.net/projects/markdown/) file with slide contents
 * `slides/template.html`: [Custom template](https://github.com/webpro/reveal-md#custom-template) for [reveal-md](https://www.npmjs.com/package/reveal-md)
 * `{{cookiecutter.reveal_static}}/edit/style.css`: file to adjust styling of slides
-* `{{cookiecutter.reveal_static}}/edit/logo.{{cookiecutter.logo_extension}}`: logo image to use
+* `{{cookiecutter.reveal_static}}/edit/logo.png`: logo image to use
 * `reveal.json`: [Reveal.js options](https://github.com/webpro/reveal-md#revealjs-options)
