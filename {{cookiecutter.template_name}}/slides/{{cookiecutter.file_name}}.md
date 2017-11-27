@@ -6,7 +6,7 @@
   
 <small>{{cookiecutter.date}}</small>
   
-<small>{{cookiecutter.description}}</small>  
+<small>*{{cookiecutter.description}}*</small>  
 
 ---
 
