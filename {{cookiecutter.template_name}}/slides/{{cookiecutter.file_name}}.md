@@ -13,6 +13,6 @@
 # Outline
 
 {% for section in cookiecutter.sections.split(',') %}
-{{loop.index}}{{'. ' + section + '\n'}}
+{{loop.index}}{{'. ' + section}}
 {% endfor %}
 {{'\n---\n\n## ' + cookiecutter.sections.replace(',','\n\n---\n\n## ')}}
