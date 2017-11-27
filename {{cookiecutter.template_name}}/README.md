@@ -3,6 +3,9 @@
 {{cookiecutter.author}}  
 {{cookiecutter.email}}  
 
+* [Slides](https://{{cookiecutter.github_user}}.github.io/{{cookiecutter.template_name}})
+* [PDF](https://github.com/{{cookiecutter.github_short}}/blob/master/slides/{{cookiecutter.file_name}}.pdf)
+
 {{cookiecutter.template_description}}.
 
 [![Build Status](https://travis-ci.org/{{cookiecutter.github_short}}.svg?branch=master)](https://travis-ci.org/{{cookiecutter.github_short}})
