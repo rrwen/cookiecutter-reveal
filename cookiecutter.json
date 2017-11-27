@@ -10,6 +10,7 @@
   "template_description": "template_description",
   "file_short": "{{cookiecutter.template_name.replace(' ', '').replace('-','').lower()}}",
   "file_name": "{{cookiecutter.author.split(' ')[-1].lower()}}{% now 'utc', '%Y' %}_{{cookiecutter.file_short}}_slides",
+  "logo_extension": ".svg",
    "github_user": "rrwen",
    "github_url": "{{'https://github.com/' + cookiecutter.github_user + '/' + cookiecutter.template_name}}",
    "github_short": "{{cookiecutter.github_user + '/' + cookiecutter.template_name}}",
