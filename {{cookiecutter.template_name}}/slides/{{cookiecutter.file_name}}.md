@@ -10,7 +10,7 @@
 
 ---
 
-# Overview
+# Outline
 
-{{'* ' + cookiecutter.sections.replace(',','\n* ')}}
+{{'\n' + '\n'.join([str(i+1) + '. ' + section for i,section in enumerate(cookiecutter.sections.split(','))])}}
 {{'\n---\n\n## ' + cookiecutter.sections.replace(',','\n---\n\n## ')}}
