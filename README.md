@@ -22,10 +22,8 @@ pip install cookiecutter
 1. Create a template using [cookiecutter](https://pypi.python.org/pypi/cookiecutter)
 2. Change the directory to the folder with the same name as the `template_name` input
 3. Install dependencies with [npm](https://www.npmjs.com/)
-4. Edit the `docs/edit/style.css` file to adjust CSS
-5. Edit the `docs/edit/logo.svg` file to change the logo
-6. Render HTML slides in the `docs` folder
-7. Render PDF slides in the `slides` folder
+4. Render HTML slides in the `docs` folder
+5. Render PDF slides in the `slides` folder
 
 ```
 cookiecutter gh:rrwen/cookiecutter-reveal
