@@ -24,7 +24,7 @@ cd {{cookiecutter.template_name}}
 npm install
 ```
 
-See [Implementation](#implementation) for more details.
+See [Edits](#edits) and [Implementation](#implementation) for more details.
 
 ## Usage
 
