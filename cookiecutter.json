@@ -15,7 +15,6 @@
    "github_short": "{{cookiecutter.github_user + '/' + cookiecutter.template_name}}",
    "reveal_static": "docs",
    "reveal_theme": "white",
-   "reveal_template": "slides/template.html",
    "reveal_controls": "true",
    "reveal_slideNumber": "true",
    "reveal_transition": "slide",

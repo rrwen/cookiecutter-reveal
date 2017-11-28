@@ -75,5 +75,13 @@ The following files will be created inside a folder with the same name as the `t
 
 File | Description
 --- | ---
+**docs/edit/logo.png** | Logo image to show on slides
+**docs/edit/style.css** | [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) file for styling the slides
+**slides/<file_name>.md** | [Markdown](https://daringfireball.net/projects/markdown/) file containing the slide contents
+**template.html** | A [reveal-md](https://www.npmjs.com/package/reveal-md) custom template file for generating slides
+**.gitignore** | A Node [.gitignore](https://git-scm.com/docs/gitignore) automatically generated from github
+**.npmignore** | A file to specify ignoring `docs/*`
 **LICENSE** | MIT [license file](https://help.github.com/articles/licensing-a-repository/) automatically created from github
+**.travis.yml** | A [.travis.yml](https://docs.travis-ci.com/user/customizing-the-build/) file for automatic builds and tests
+**package.json** | The [npm package.json](https://docs.npmjs.com/files/package.json) specifications with [reveal-md](https://www.npmjs.com/package/reveal-md) and [decktape](https://www.npmjs.com/package/decktape) dependencies
 **README.md** | a readme [Markdown](https://daringfireball.net/projects/markdown/) file with header section

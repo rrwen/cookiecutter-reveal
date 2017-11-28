@@ -4,7 +4,7 @@
   "description": "{{cookiecutter.template_description}}",
   "main": "",
   "scripts": {
-    "html": "node ./node_modules/reveal-md/bin/cli.js slides/{{cookiecutter.file_name}}.md --static {{cookiecutter.reveal_static}} --reveal-template {{cookiecutter.reveal_template}}",
+    "html": "node ./node_modules/reveal-md/bin/cli.js slides/{{cookiecutter.file_name}}.md --static {{cookiecutter.reveal_static}} --reveal-template slides/template.html",
     "pdf": "node ./node_modules/decktape/decktape.js reveal {{cookiecutter.reveal_static}}/index.html slides/{{cookiecutter.file_name}}.pdf"
   },
   "directories": {

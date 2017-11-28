@@ -14,6 +14,8 @@
 
 ## Developer Notes
 
+### Generate Slides
+
 1. Install [npm](https://www.npmjs.com/)
 2. [Clone](https://git-scm.com/docs/git-clone) this repository
 3. Generate **{{cookiecutter.reveal_static}}/index.html** (see `script.html`) in [package.json](https://github.com/{{cookiecutter.github_short}}/blob/master/package.json)
@@ -27,9 +29,30 @@ npm run html
 npm run pdf
 ```
 
+### Edits
+
 The following can be edited before rendering:
 
 * `slides/{{cookiecutter.file_name}}.md`: [Markdown](https://daringfireball.net/projects/markdown/) file with slide contents
-* `slides/template.html`: [Custom reveal-md template](https://github.com/webpro/reveal-md#custom-template) 
+* `slides/template.html`: Custom [reveal-md](https://github.com/webpro/reveal-md) template to generate slides with
 * `{{cookiecutter.reveal_static}}/edit/style.css`: [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) file to adjust styling of slides
 * `{{cookiecutter.reveal_static}}/edit/logo.png`: logo image to use
+
+### Implementation
+
+
+The slides [{{cookiecutter.template_name}}]({{cookiecutter.github_url}}) uses the following [npm](https://www.npmjs.com/) packages for its implementation:
+
+npm | Purpose
+--- | ---
+[reveal-md](https://www.npmjs.com/package/reveal-md) | Converting `slides/{{cookiecutter.file_name}}.md` markdown to `{{cookiecutter.reveal_static}}/index.html` reveal html slides
+[decktape](https://www.npmjs.com/package/decktape) | Converting `slides/{{cookiecutter.file_name}}.md` markdown to `slides/{{cookiecutter.file_name}}.pdf` format 
+[windows-build-tools](https://www.npmjs.com/package/windows-build-tools) | Compiling dependencies for decktape on Windows Operating System (OS)
+
+```
+       reveal-md             <-- Convert markdown  slides to html
+
+        decktape              <-- Convert markdown slides to pdf
+              |
+windows-build-tools     <-- Compile decktape on Windows OS
+```
