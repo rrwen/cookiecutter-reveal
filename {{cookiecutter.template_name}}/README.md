@@ -24,6 +24,8 @@ cd {{cookiecutter.template_name}}
 npm install
 ```
 
+See [Implementation](#implementation) for more details.
+
 ## Usage
 
 1. Generate `{{cookiecutter.reveal_static}}/index.html` (see `script.html` in [package.json](https://github.com/{{cookiecutter.github_short}}/blob/master/package.json))
