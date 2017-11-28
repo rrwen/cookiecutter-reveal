@@ -50,9 +50,9 @@ npm | Purpose
 [windows-build-tools](https://www.npmjs.com/package/windows-build-tools) | Compiling dependencies for decktape on Windows Operating System (OS)
 
 ```
-       reveal-md             <-- Convert markdown  slides to html
+       reveal-md            <-- Convert markdown  slides to html
 
-        decktape              <-- Convert markdown slides to pdf
-              |
-windows-build-tools     <-- Compile decktape on Windows OS
+       decktape             <-- Convert markdown slides to pdf
+          |
+  windows-build-tools       <-- Compile decktape on Windows OS
 ```
