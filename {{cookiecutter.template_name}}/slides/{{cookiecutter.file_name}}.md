@@ -24,4 +24,4 @@ revealOptions:
 {% for section in cookiecutter.sections.split(',') -%}
 {{loop.index}}{{'. ' + section + '\n'}}
 {%- endfor %}
-{{'---\n\n## ' + cookiecutter.sections.replace(',','\n\n---\n\n## ')}}
+{{'---\n\n# ' + cookiecutter.sections.replace(',','\n\n---\n\n## ')}}
