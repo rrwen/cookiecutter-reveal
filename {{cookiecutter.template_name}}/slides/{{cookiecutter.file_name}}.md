@@ -3,8 +3,8 @@ title: {{cookiecutter.title}}
 theme: {{cookiecutter.reveal_theme}}
 revealOptions:
   transition: '{{cookiecutter.reveal_transition}}'
-	controls: {{cookiecutter.reveal_controls}}
-	slideNumber: {{cookiecutter.reveal_slideNumber}}
+  controls: {{cookiecutter.reveal_controls}}
+  slideNumber: {{cookiecutter.reveal_slideNumber}}
 ---
 
 # {{cookiecutter.title}}
