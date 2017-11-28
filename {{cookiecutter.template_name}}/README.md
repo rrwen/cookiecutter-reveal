@@ -31,7 +31,7 @@ npm run pdf
 
 ### Edits
 
-The following can be edited before rendering:
+The following can be edited before generating:
 
 * `slides/{{cookiecutter.file_name}}.md`: [Markdown](https://daringfireball.net/projects/markdown/) file with slide contents
 * `slides/template.html`: Custom [reveal-md](https://github.com/webpro/reveal-md) template to generate slides with
