@@ -38,6 +38,13 @@
   display: none;
 }
 
+/* Remove image border and shadows*/
+.reveal section img {
+  background:none;
+  border:none;
+  box-shadow:none;
+}
+
 /** Logo **/
 
 #logo-div {
@@ -65,4 +72,11 @@
   color: black;
   font-size: 18pt;
   outline: 0;
+}
+
+/** Custom **/
+
+.background-text {
+  color: white;
+  text-shadow: 0 1px 0 black;
 }
