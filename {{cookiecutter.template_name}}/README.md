@@ -18,8 +18,8 @@
 
 1. Install [npm](https://www.npmjs.com/)
 2. [Clone](https://git-scm.com/docs/git-clone) this repository
-3. Generate **{{cookiecutter.reveal_static}}/index.html** (see `script.html`) in [package.json](https://github.com/{{cookiecutter.github_short}}/blob/master/package.json)
-4. Generate **slides/{{cookiecutter.file_name}}.pdf** (see `script.pdf`) in [package.json](https://github.com/{{cookiecutter.github_short}}/blob/master/package.json)
+3. Generate **{{cookiecutter.reveal_static}}/index.html** (see `script.html` in [package.json](https://github.com/{{cookiecutter.github_short}}/blob/master/package.json))
+4. Generate **slides/{{cookiecutter.file_name}}.pdf** (see `script.pdf` in [package.json](https://github.com/{{cookiecutter.github_short}}/blob/master/package.json))
 
 ```
 git clone {{cookiecutter.github_url}}
