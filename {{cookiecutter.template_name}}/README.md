@@ -45,8 +45,8 @@ The slides [{{cookiecutter.template_name}}]({{cookiecutter.github_url}}) uses th
 
 npm | Purpose
 --- | ---
-[reveal-md](https://www.npmjs.com/package/reveal-md) | Converting `slides/{{cookiecutter.file_name}}.md` markdown to `{{cookiecutter.reveal_static}}/index.html` reveal html slides
-[decktape](https://www.npmjs.com/package/decktape) | Converting `slides/{{cookiecutter.file_name}}.md` markdown to `slides/{{cookiecutter.file_name}}.pdf` format 
+[reveal-md](https://www.npmjs.com/package/reveal-md) | Converting `slides/{{cookiecutter.file_name}}.md` to `{{cookiecutter.reveal_static}}/index.html`
+[decktape](https://www.npmjs.com/package/decktape) | Converting `slides/{{cookiecutter.file_name}}.md` to `slides/{{cookiecutter.file_name}}.pdf`
 [windows-build-tools](https://www.npmjs.com/package/windows-build-tools) | Compiling dependencies for decktape on Windows Operating System (OS)
 
 ```
