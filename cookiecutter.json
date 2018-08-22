@@ -18,6 +18,7 @@
   "reveal_controls": "true",
   "reveal_slideNumber": "true",
   "reveal_transition": "slide",
+  "reveal_pdf_size": "1920x1080",
   "_copy_without_render": [
     "slides/template.html"
   ]
