@@ -5,7 +5,7 @@
   "main": "",
   "scripts": {
     "html": "node ./node_modules/reveal-md/bin/cli.js slides/{{cookiecutter.file_name}}.md --static {{cookiecutter.reveal_static}} --reveal-template slides/template.html",
-    "pdf": "node ./node_modules/decktape/decktape.js reveal {{cookiecutter.reveal_static}}/index.html slides/{{cookiecutter.file_name}}.pdf"
+    "pdf": "node ./node_modules/decktape/decktape.js -s {{cookiecutter.reveal_pdf_size}} reveal {{cookiecutter.reveal_static}}/index.html slides/{{cookiecutter.file_name}}.pdf"
   },
   "directories": {
     "test": "tests"
