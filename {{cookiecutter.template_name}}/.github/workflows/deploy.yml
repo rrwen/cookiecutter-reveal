@@ -1,0 +1,22 @@
+on: push
+
+name: Deploy
+
+jobs:
+
+  deploy:
+    runs-on: ubuntu-latest
+    name: build and upload
+    steps:
+      # Checkout the source code so we have some files to look at.
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+      - run: npm install
+      - run: npm run html
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3.8.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs/
