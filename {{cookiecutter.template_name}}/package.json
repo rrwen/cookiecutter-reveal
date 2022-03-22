@@ -4,7 +4,7 @@
   "description": "{{cookiecutter.template_description}}",
   "main": "",
   "scripts": {
-    "html": "node ./node_modules/reveal-md/bin/cli.js slides/{{cookiecutter.file_name}}.md --static {{cookiecutter.reveal_static}} --reveal-template slides/template.html",
+    "html": "node ./node_modules/reveal-md/bin/reveal-md.js slides/{{cookiecutter.file_name}}.md --static {{cookiecutter.reveal_static}} --template slides/template.html",
     "pdf": "node ./node_modules/decktape/decktape.js -s {{cookiecutter.reveal_pdf_size}} reveal {{cookiecutter.reveal_static}}/index.html slides/{{cookiecutter.file_name}}.pdf"
   },
   "directories": {
@@ -21,10 +21,10 @@
   },
   "homepage": "{{cookiecutter.github_url}}#readme",
   "dependencies": {
-    "reveal-md": "^0.5.0"
+    "reveal-md": "^5.3.2"
   },
   "optionalDependencies": {
-    "decktape": "^2.6.1",
+    "decktape": "^3.4.1",
     "windows-build-tools": "^1.3.2"
   }
 }
