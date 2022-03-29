@@ -1,11 +1,10 @@
 # cookiecutter-reveal
 
-Richard Wen  
-rrwen.dev@gmail.com  
+Based on [work](https://github.com/rrwen/cookiecutter-reveal) by Richard Wen  
 
-Personal template for reveal.js presentations with Python cookiecutter.
+Template for [reveal-md](https://github.com/webpro/reveal-md) presentations with Python cookiecutter.
 
-[![Build Status](https://travis-ci.org/rrwen/cookiecutter-reveal.svg?branch=master)](https://travis-ci.org/rrwen/cookiecutter-reveal)
+[![Build Status](https://github.com/renefritze/cookiecutter-reveal-md/actions/workflows/build.yml/badge.svg?main)](https://github.com/renefritze/cookiecutter-reveal-md/actions/workflows/build.yml)
 [![GitHub license](https://img.shields.io/github/license/rrwen/cookiecutter-reveal.svg)](https://github.com/rrwen/cookiecutter-reveal/blob/master/LICENSE)
 
 ## Install
@@ -26,7 +25,7 @@ pip install cookiecutter
 5. Render PDF slides in the `slides` folder
 
 ```
-cookiecutter gh:rrwen/cookiecutter-reveal
+cookiecutter gh:renefritze/cookiecutter-reveal-md
 cd <template_name>
 npm install
 npm run html
@@ -75,13 +74,11 @@ The following files will be created inside a folder with the same name as the `t
 
 File | Description
 --- | ---
-**docs/edit/logo.png** | Logo image to show on slides
-**docs/edit/style.css** | [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) file for styling the slides
 **slides/<file_name>.md** | [Markdown](https://daringfireball.net/projects/markdown/) file containing the slide contents
 **template.html** | A [reveal-md](https://www.npmjs.com/package/reveal-md) custom template file for generating slides
 **.gitignore** | A Node [.gitignore](https://git-scm.com/docs/gitignore) automatically generated from github
 **.npmignore** | A file to specify ignoring `docs/*`
 **LICENSE** | MIT [license file](https://help.github.com/articles/licensing-a-repository/) automatically created from github
-**.travis.yml** | A [.travis.yml](https://docs.travis-ci.com/user/customizing-the-build/) file for automatic builds and tests
+**.github** | [Github Actions](https://github.com/features/actions) workflows for deploying the page to Github Pages
 **package.json** | The [npm package.json](https://docs.npmjs.com/files/package.json) specifications with [reveal-md](https://www.npmjs.com/package/reveal-md) and [decktape](https://www.npmjs.com/package/decktape) dependencies
 **README.md** | a readme [Markdown](https://daringfireball.net/projects/markdown/) file with header section
