@@ -9,13 +9,13 @@ revealOptions:
 
 # {{cookiecutter.title}}
 
-<small>{{cookiecutter.author}}</small>  
-<small>{{cookiecutter.email}}</small>  
-<small>{{cookiecutter.affiliation}}</small>  
-  
+<small>{{cookiecutter.author}}</small>
+<small>{{cookiecutter.email}}</small>
+<small>{{cookiecutter.affiliation}}</small>
+
 <small>{{cookiecutter.date}}</small>
-  
-<small>*{{cookiecutter.description}}*</small>  
+
+<small>*{{cookiecutter.description}}*</small>
 
 ---
 

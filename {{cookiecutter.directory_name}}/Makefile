@@ -8,9 +8,9 @@ slides/{{cookiecutter.file_name}}.pdf: slides/{{cookiecutter.file_name}}.md
 install:
 	npm install
 
-html: docs/index.html	
+html: docs/index.html
 
 pdf: slides/{{cookiecutter.file_name}}.pdf
-	
+
 watch:
 	npm run watch

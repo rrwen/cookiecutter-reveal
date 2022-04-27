@@ -1,6 +1,6 @@
 # cookiecutter-reveal
 
-Based on [work](https://github.com/rrwen/cookiecutter-reveal) by Richard Wen  
+Based on [work](https://github.com/rrwen/cookiecutter-reveal) by Richard Wen
 
 Template for [reveal-md](https://github.com/webpro/reveal-md) presentations with Python cookiecutter.
 
@@ -19,14 +19,14 @@ pip install cookiecutter
 ## Usage
 
 1. Create a template using [cookiecutter](https://pypi.python.org/pypi/cookiecutter)
-2. Change the directory to the folder with the same name as the `template_name` input
+2. Change the directory to the folder with the same name as the `directory_name` input
 3. Install dependencies with [npm](https://www.npmjs.com/)
 4. Render HTML slides in the `docs` folder
 5. Render PDF slides in the `slides` folder
 
 ```
 cookiecutter gh:renefritze/cookiecutter-reveal-md
-cd <template_name>
+cd <directory_name>
 npm install
 npm run html
 npm run pdf
@@ -39,10 +39,10 @@ See [Implementation](#implementation) for more details.
 ### Create Github Repository
 
 1. Ensure [git](https://git-scm.com/) is installed
-2. Change directory to the generated folder `cd <template_name>`
+2. Change directory to the generated folder `cd <directory_name>`
 3. Initialize the repository
 4. Add the generated files to commit
-5. Create an empty [Github repository](https://help.github.com/articles/create-a-repo/) with the same name as `template_name`
+5. Create an empty [Github repository](https://help.github.com/articles/create-a-repo/) with the same name as `directory_name`
 6. Pull any changes if the Github repository is not empty
 7. Push the commit from `4.` to your created Github repository
 
@@ -50,7 +50,7 @@ See [Implementation](#implementation) for more details.
 git init
 git add .
 git commit -a -m "Initial commit"
-git remote add origin https://github.com/<github_user>/<template_name>.git
+git remote add origin https://github.com/<github_user>/<directory_name>.git
 git pull origin master --allow-unrelated-histories
 git push -u origin master
 ```
@@ -60,17 +60,17 @@ git push -u origin master
 This code creates folders and files for [cookiecutter](https://pypi.python.org/pypi/cookiecutter) templates.
 
 * The main file is [cookiecutter.json](https://github.com/rrwen/cookiecutter-npm/blob/master/cookiecutter.json) which defines the inputs for the command line interface
-* The inputs then replace any values surrounded with `{{}}` inside the folder [{{cookiecutter.template_name}}](https://github.com/rrwen/cookiecutter-reveal/tree/master/%7B%7Bcookiecutter.template_name%7D%7D)
+* The inputs then replace any values surrounded with `{{}}` inside the folder [{{cookiecutter.directory_name}}](https://github.com/rrwen/cookiecutter-reveal/tree/master/%7B%7Bcookiecutter.directory_name%7D%7D)
 
 ```
         cookiecutter              <-- template tool
              |
       cookiecutter.json           <-- template inputs
              |
-{{cookiecutter.template_name}}    <-- generated template
+{{cookiecutter.directory_name}}    <-- generated template
 ```
 
-The following files will be created inside a folder with the same name as the `template_name` input:
+The following files will be created inside a folder with the same name as the `directory_name` input:
 
 File | Description
 --- | ---

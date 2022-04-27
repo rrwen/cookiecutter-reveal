@@ -1,16 +1,16 @@
-# {{cookiecutter.template_name}}
+# {{cookiecutter.directory_name}}
 
-{{cookiecutter.author}}  
-{{cookiecutter.email}}  
+{{cookiecutter.author}}
+{{cookiecutter.email}}
 
-* [Slides](https://{{cookiecutter.github_user}}.github.io/{{cookiecutter.template_name}})
+* [Slides](https://{{cookiecutter.github_user}}.github.io/{{cookiecutter.directory_name}})
 * [PDF](https://github.com/{{cookiecutter.github_short}}/blob/master/slides/{{cookiecutter.file_name}}.pdf)
 
 {{cookiecutter.template_description}}.
 
 [![Build Status](https://travis-ci.org/{{cookiecutter.github_short}}.svg?branch=master)](https://travis-ci.org/{{cookiecutter.github_short}})
 [![GitHub license](https://img.shields.io/github/license/{{cookiecutter.github_short}}.svg)](https://github.com/{{cookiecutter.github_short}}/blob/master/LICENSE)
-[![Twitter](https://img.shields.io/twitter/url/https/github.com/{{cookiecutter.github_short}}.svg?style=social)](https://twitter.com/intent/tweet?text={{cookiecutter.template_description.replace(' ','%20')}}:%20https%3A%2F%2Fgithub.com%2F{{cookiecutter.github_user}}%2F{{cookiecutter.template_name}}%20%23revealjs%20%23slides)
+[![Twitter](https://img.shields.io/twitter/url/https/github.com/{{cookiecutter.github_short}}.svg?style=social)](https://twitter.com/intent/tweet?text={{cookiecutter.template_description.replace(' ','%20')}}:%20https%3A%2F%2Fgithub.com%2F{{cookiecutter.github_user}}%2F{{cookiecutter.directory_name}}%20%23revealjs%20%23slides)
 
 ## Install
 
@@ -20,7 +20,7 @@
 
 ```
 git clone {{cookiecutter.github_url}}
-cd {{cookiecutter.template_name}}
+cd {{cookiecutter.directory_name}}
 npm install
 ```
 
@@ -50,7 +50,7 @@ The following can be edited before generating:
 ### Implementation
 
 
-The slides [{{cookiecutter.template_name}}]({{cookiecutter.github_url}}) uses the following [npm](https://www.npmjs.com/) packages for its implementation:
+The slides [{{cookiecutter.directory_name}}]({{cookiecutter.github_url}}) uses the following [npm](https://www.npmjs.com/) packages for its implementation:
 
 npm | Purpose
 --- | ---
