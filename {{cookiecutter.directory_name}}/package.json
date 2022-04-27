@@ -1,7 +1,7 @@
 {
   "name": "{{cookiecutter.directory_name}}",
   "version": "0.0.0",
-  "description": "{{cookiecutter.template_description}}",
+  "description": "{{cookiecutter.repository_description}}",
   "main": "",
   "scripts": {
     "html": "node ./node_modules/reveal-md/bin/reveal-md.js slides/{{cookiecutter.file_name}}.md --static {{cookiecutter.reveal_static}} --template slides/template.html",

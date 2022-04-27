@@ -7,7 +7,7 @@
   "description": "",
   "sections": "Introduction,Methods,Results,Discussion,Conclusion,References",
   "directory_name": "directory_name",
-  "template_description": "template_description",
+  "repository_description": "repository_description",
   "file_short": "{{cookiecutter.directory_name.replace(' ', '').replace('-','').lower()}}",
   "file_name": "{{cookiecutter.author.split(' ')[-1].lower()}}{% now 'utc', '%Y' %}_{{cookiecutter.file_short}}_slides",
   "github_user": "rrwen",
